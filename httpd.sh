@@ -6,7 +6,7 @@ containercheck() {
     echo "httpd Container is already running."
   else
     echo "Running clean up on httpd."
-    sudo docker rm prometheus
+    sudo docker rm httpd
     # Call to build and run container
     echo "Building and starting httpd Container"
     sudo docker build -t my-httpd ~/httpd-hello-world
