@@ -11,6 +11,7 @@ containercheck() {
     echo "Building and starting httpd Container"
     sudo docker build -t my-httpd ~/httpd-hello-world
     sudo docker run --name httpd -d -p 9010:9010 my-httpd
+    echo "httpd container built and is now running"
   fi
 }
 
