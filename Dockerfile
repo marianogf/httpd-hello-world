@@ -1,5 +1,5 @@
 FROM httpd:latest
-MAINTANER John Whitley
+MAINTAINER John Whitley
 COPY index.html /usr/local/apache2/htdocs/
 
 #Expose Ports
